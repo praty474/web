@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    * {
+      font-family: "poppins";
+    }
+
+    .section-landing {
+      position: relative;
+      height: 100vh;
+      background: url(img/image.png);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-size: cover;
+      opacity: 90%;
+
+    }
+
+    .section-landing a {
+      color: white;
+    }
+
+    .title-landing {
+      font-size: 4rem;
+      font-weight: bold;
+      line-height: 90%;
+    }
+
+
+
+    .section-1 {
+      position: relative;
+      height: 100vh;
+      background: #1e1e1e;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .section-2 {
+      position: relative;
+      height: 100vh;
+      background: url(img/image.png);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .section-3 {
+      position: relative;
+      height: 100vh;
+      background: #1e1e1e;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .section-5 {
+      position: relative;
+      height: 100vh;
+      background: url(img/image7.png);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-size: cover;
+    }
+
+    .section-6 {
+      position: relative;
+      height: max-content;
+      background: #1e1e1e;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-size: cover;
+    }
+
+    
+    .section-img {
+      position: relative;
+      height: auto;
+      background: #1e1e1e;
+      background-size: cover;
+      color: white;
+      padding: calc(5%);
+     
+    }
+
+    .num {
+      font-size: 9rem;
+      font-weight: bold;
+      color: #ee9b00;
+    }  
+      .num-2 {
+      font-size: 6rem;
+      font-weight: bold;
+      color: #ee9b00;
+    }
+
+    .title-main {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .title {
+      font-size: 2.6rem;
+      font-weight: 200;
+    }
+
+    .title-sec2 {
+      font-size: 2.6rem;
+      font-weight: 600;
+    }
+
+
+    .box {
+      height: 100vh;
+      width: 42vw;
+      background: #1e1e1e;
+    }
+
+    .icons {
+      height: 24px;
+    }
+
+    .variable {
+      color: white;
+    }
+
+    .values {
+      color: #ee9b00;
+
+    }
+
+    .form-control,
+    .input-group-text {
+      background-color: gray;
+      border: none;
+      font: 300;
+      color: white;
+    }
+
+    .section-6 input {
+      background-color: white;
+      font-size: 0.7rem;
+    }
+
+    .section-6 input::placeholder {
+      color: #ee9b00;
+
+    }
+
+    .section-6 .input-group-text {
+      background-color: #ee9b00;
+    }
+
+
+
+    .image-container {
+      position: relative;
+      display: inline-block;
+    }
+
+
+    .overlay-text {
+      position: absolute;
+      top: 60%;
+      left: 20%;
+      /* transform: translate(-50%); */
+      text-align: center;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.7);
+      /* Transparent background for text */
+      padding: 20px;
+      border-radius: 5px;
+    }
+
+    @media (max-width: 768px) {
+      .overlay-text {
+        font-size: 14px;
+        padding: 10px;
+      }
+    }
+
+    .carousel-item {
+      text-align: center;
+      color: white;
+    }
+
+    .carousel-item img {
+      width: 50%;
+      height: 300px;
+      filter: brightness(50%);
+    }
+
+    .carousel-caption {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: white;
+    }
+
+    .carousel-caption h5 {
+      font-size: 1.5rem;
+    }
+
+    .carousel-caption p {
+      font-size: 1rem;
+    }
+
+    .carousel-indicators li {
+      background-color: white;
+    }
+
+    .second img {
+      height: 200px;
+      width: calc(15%);
+    }
+
+    /* .p-lg-5{
+      padding: $spacer !important;
+    } */
+
+    /* footer */
+    .section-6 ul {
+      list-style: none;
+    }
+
+    .section-6 .footer-list {
+      font-size: 0.8rem;
+    }
+
+    .section-6 a {
+      color: white;
+      text-decoration: none;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js">
+  </script>
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <!-- landing section  -->
+  <section class="section-landing">
+
+    <!-- <div class="row">
+      <nav class="navbar navbar-expand-lg ">
+        <a class="navbar-brand" href="#">Wanderlust.</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNav">
+          <ul class="navbar-nav text-uppercase">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Destinations <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Trips</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">EXPERIENCE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">contact</a>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+    </div>  -->
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-8">
+          <div class="row">
+            <p class="body-text ">Lorem, ipsum.</p>
+
+            <p class="title-landing text-uppercase ">annapurna base camp trekking</p>
+
+            <div class="col-8 m-1">
+              <p class="body-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus maiores dolorem
+                excepturi doloremque facere animi dolor Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Debitis, dolores? sunt ad ullam beatae.</p>
+
+            </div>
+
+          </div>
+
+          <div class="row m-0">
+            <button type="button" class="btn btn-warning button text-uppercase">
+              DISCOVER lOCATION
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="row">
+
+        <div class="wrapper">
+          <div class="carousel">
+            <img src="img/image5.png" alt="img" draggable="false">
+            <img src="img/image5.png" alt="img" draggable="false">
+            <img src="img/image5.png" alt="img" draggable="false">
+            <img src="img/image5.png" alt="img" draggable="false">
+            <img src="img/image5.png" alt="img" draggable="false">
+            <img src="img/image5.png" alt="img" draggable="false">
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    </div>
+
+  </section>
+  <section class="section-1">
+    <div class="container">
+      <div class="row">
+        <div class="col-5">
+          <div class="row">
+            <div class="col-4 align-content-center">
+              <div class="num">01</div>
+            </div>
+            <div class="col-8 align-content-center">
+              <div class="row text-end">
+                <div class="title-main border-top border-2">DISCOVER</div>
+              </div>
+              <div class="row text-end">
+                <div class="title border-bottom border-2">NEW lOCATION</div>
+              </div>
+            </div>
+            <div class="row mt-2">
+              <div class="title-2 text-uppercase">
+                <h5>Lorem ipsum</h5>
+              </div>
+            </div>
+            <div class="row mt-2">
+              <p class="body-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Delectus, harum voluptatum consequuntur facere impedit quas
+                similique quidem repellendus doloribus, reiciendis aliquid
+                saepe iusto vero earum totam nihil fugiat blanditiis
+                consectetur?
+              </p>
+            </div>
+          </div>
+          <div class="row m-0">
+            <button type="button" class="btn btn-outline-warning button text-uppercase">
+              Explore Packages
+            </button>
+          </div>
+        </div>
+        <div class="col-7">
+          <img src="img/image2.png" class="img-fluid" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- section2 -->
+  <section class="section-2 overflow-hidden">
+    <div class="row">
+      <div class="col-8"></div>
+      <div class="col-4 ">
+        <div class="box opacity-75 p-5 p-lg-5 ">
+          <div class="row ">
+            <div class="title-sec2 text-uppercase text-center">EXPERIENCE nature in a nomadic way </div>
+          </div>
+          <div class="row">
+
+            <div class="body-text  p-4 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione,
+              amet cg elit. Iste optio tempora id dolore quam
+            </div>
+
+          </div>
+          <div class="row row-cols-2 ps-3 pe-5">
+            <div class="col pb-3 "><img src="img/icon1.png" class="icons pe-3" alt="">Camping</div>
+            <div class="col "><img src="img/icon1.png" class="icons pe-3" alt="">Camping</div>
+            <div class="col "><img src="img/icon1.png" class="icons pe-3" alt="">Camping</div>
+            <div class="col pb-3"><img src="img/icon1.png" class="icons pe-3" alt="">Camping</div>
+            <div class="col "><img src="img/icon1.png" class="icons pe-3" alt="">Camping</div>
+            <div class="col pb-3"><img src="img/icon1.png" class="icons pe-3" alt="">Camping</div>
+            <div class="col "><img src="img/icon1.png" class="icons pe-3" alt="">Camping</div>
+            <div class="col "><img src="img/icon1.png" class="icons pe-3" alt="">Camping</div>
+          </div>
+          <div class="row pt-5 ps-4">
+            <button type="button" class="btn btn-outline-warning button text-uppercase">
+              Explore Packages
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- section3 -->
+  <section class="section-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div class="row">
+            <div class="col-4 align-content-center">
+              <div class="num">02</div>
+            </div>
+            <div class="col-8 align-content-center">
+              <div class="row text-end">
+                <div class="title-main text-uppercase border-top border-2">Find your</div>
+              </div>
+              <div class="row text-end">
+                <div class="title text-uppercase border-bottom border-2">next adventure</div>
+              </div>
+            </div>
+
+            <div class="row row-cols-3 m-1 mt-4">
+              <div class="col">
+                <div class="row">
+                  <div class="col-5"><img src="img/icon1.png" class="" alt="" height="40"></div>
+                  <div class="col">
+                    <div class="row variable text-uppercase">Distance</div>
+                    <div class="row values text-uppercase">500KM</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col ">
+                <div class="row">
+                  <div class="col-5"><img src="img/icon1.png" class="" alt="" height="40"></div>
+                  <div class="col">
+                    <div class="row variable text-uppercase">Distance</div>
+                    <div class="row values text-uppercase">500KM</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col ">
+                <div class="row">
+                  <div class="col-5"><img src="img/icon1.png" class="" alt="" height="40"></div>
+                  <div class="col">
+                    <div class="row variable text-uppercase">Distance</div>
+                    <div class="row values text-uppercase">500KM</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="row row-cols-3 mt-4">
+              <div class="col">
+                <div class="row text-uppercase ms-3">Participants</div>
+                <div class="row ms-1">
+                  <div class="input-group flex-nowrap">
+                    <input type="text" class="form-control" placeholder="PERSON" aria-label="Username"
+                      aria-describedby="addon-wrapping">
+                    <span class="input-group-text" id="addon-wrapping">@</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="row text-uppercase ms-3">Participants</div>
+                <div class="row ms-1">
+                  <div class="input-group flex-nowrap">
+                    <input type="text" class="form-control" placeholder="PERSON" aria-label="Username"
+                      aria-describedby="addon-wrapping">
+                    <span class="input-group-text" id="addon-wrapping">@</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="row text-uppercase ms-3">Participants</div>
+                <div class="row ms-1">
+                  <div class="input-group flex-nowrap">
+                    <input type="text" class="form-control" placeholder="PERSON" aria-label="Username"
+                      aria-describedby="addon-wrapping">
+                    <span class="input-group-text" id="addon-wrapping">@</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+            <div class="row mt-5 ms-3 ">
+              <button type="button" class="btn btn-outline-warning button text-uppercase">
+                Explore Packages
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 align-content-center">
+          <div class="row row-cols-3">
+            <div class="col image-container"><img src="img/image3.png" class="img-fluid " height="300" alt="">
+              <div class="overlay-text">
+                <div class="row row-cols-2">
+                  <div class="col2"><img src="img/icon1.png" class="icons" alt=""></div>
+                  <div class="col10">
+                    <div class="row">5 Days</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="col image-container"><img src="img/image3.png" class="img-fluid " height="300" alt="">
+              <div class="overlay-text">
+                <div class="row row-cols-2">
+                  <div class="col2"><img src="img/icon1.png" class="icons" alt=""></div>
+                  <div class="col10">
+                    <div class="row">5 Days</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="col image-container"><img src="img/image3.png" class="img-fluid " height="300" alt="">
+              <div class="overlay-text">
+                <div class="row row-cols-2">
+                  <div class="col2"><img src="img/icon1.png" class="icons" alt=""></div>
+                  <div class="col10">
+                    <div class="row">5 Days</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- section4 -->
+  <section class="section-4">
+    <div class="row ">
+      <div class="col">
+        <div class="title-main text-uppercase text-center">our recent blog posts</div>
+      </div>
+      <div class="row">
+        <div class="wrapper2">
+          <div class="carousel2">
+            <img src="img/image5.png" alt="img" draggable="false">
+            <img src="img/image5.png" alt="img" draggable="false">
+            <img src="img/image5.png" alt="img" draggable="false">
+            <img src="img/image5.png" alt="img" draggable="false">
+            <img src="img/image5.png" alt="img" draggable="false">
+            <img src="img/image5.png" alt="img" draggable="false">
+            <img src="img/image5.png" alt="img" draggable="false">
+            <img src="img/image5.png" alt="img" draggable="false">
+            <img src="img/image5.png" alt="img" draggable="false">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </section>
+
+  <!-- section-img -->
+  <section class="section-img">
+    <div class="container">
+      <div class="row">
+        <div class="col-2  ">
+          <h1 class="num-2">02</h1>
+        </div>
+        <div class="col-4 text-start align-content-center p-0">
+          <div class="row text-uppercase  ">
+            
+            <div class="title-main border-top border-2">trending trip</div>
+
+          </div>
+          <div class="row text-uppercase ">
+        
+            <div class="title border-bottom border-2 ">Explore tours</div>
+
+          </div>
+        </div>
+        <div class="container">
+          <div class="row no-gutters">
+              <!-- Card 1 -->
+              <div class="col-md-3 col-sm-6">
+                  <div class="trip-card">
+                      <img src="img/image6.png" alt="Trip Image">
+                      <div class="trip-overlay">
+                          <p class="trip-price">Best Seller • $170/Person</p>
+                          <p class="trip-title">Langtang Valley and Tamang Heritage Trek</p>
+                          <p class="trip-duration">5 Days</p>
+                          <a href="#" class="btn btn-outline-light btn-sm">View Details</a>
+                      </div>
+                  </div>
+              </div>
+              <!-- Card 2 -->
+              <div class="col-md-3 col-sm-6">
+                  <div class="trip-card">
+                      <img src="img/image6.png" alt="Trip Image">
+                      <div class="trip-overlay">
+                          <p class="trip-price">Best Seller • $170/Person</p>
+                          <p class="trip-title">Langtang Valley and Tamang Heritage Trek</p>
+                          <p class="trip-duration">5 Days</p>
+                          <a href="#" class="btn btn-outline-light btn-sm">View Details</a>
+                      </div>
+                  </div>
+              </div>
+              <!-- Card 3 -->
+              <div class="col-md-3 col-sm-6">
+                  <div class="trip-card">
+                      <img src="img/image6.png" alt="Trip Image">
+                      <div class="trip-overlay">
+                          <p class="trip-price">Best Seller • $170/Person</p>
+                          <p class="trip-title">Langtang Valley and Tamang Heritage Trek</p>
+                          <p class="trip-duration">5 Days</p>
+                          <a href="#" class="btn btn-outline-light btn-sm">View Details</a>
+                      </div>
+                  </div>
+              </div>
+              <!-- Card 4 -->
+              <div class="col-md-3 col-sm-6">
+                  <div class="trip-card">
+                      <img src="img/image6.png" alt="Trip Image">
+                      <div class="trip-overlay">
+                          <p class="trip-price">Best Seller • $170/Person</p>
+                          <p class="trip-title">Langtang Valley and Tamang Heritage Trek</p>
+                          <p class="trip-duration">5 Days</p>
+                          <a href="#" class="btn btn-outline-light btn-sm">View Details</a>
+                      </div>
+                  </div>
+              </div>     <!-- Card 4 -->
+              <div class="col-md-3 col-sm-6">
+                  <div class="trip-card">
+                      <img src="img/image6.png" alt="Trip Image">
+                      <div class="trip-overlay">
+                          <p class="trip-price">Best Seller • $170/Person</p>
+                          <p class="trip-title">Langtang Valley and Tamang Heritage Trek</p>
+                          <p class="trip-duration">5 Days</p>
+                          <a href="#" class="btn btn-outline-light btn-sm">View Details</a>
+                      </div>
+                  </div>
+              </div>     <!-- Card 4 -->
+              <div class="col-md-3 col-sm-6">
+                  <div class="trip-card">
+                      <img src="img/image6.png" alt="Trip Image">
+                      <div class="trip-overlay">
+                          <p class="trip-price">Best Seller • $170/Person</p>
+                          <p class="trip-title">Langtang Valley and Tamang Heritage Trek</p>
+                          <p class="trip-duration">5 Days</p>
+                          <a href="#" class="btn btn-outline-light btn-sm">View Details</a>
+                      </div>
+                  </div>
+              </div>     <!-- Card 4 -->
+              <div class="col-md-3 col-sm-6">
+                  <div class="trip-card">
+                      <img src="img/image6.png" alt="Trip Image">
+                      <div class="trip-overlay">
+                          <p class="trip-price">Best Seller • $170/Person</p>
+                          <p class="trip-title">Langtang Valley and Tamang Heritage Trek</p>
+                          <p class="trip-duration">5 Days</p>
+                          <a href="#" class="btn btn-outline-light btn-sm">View Details</a>
+                      </div>
+                  </div>
+              </div>     <!-- Card 4 -->
+              <div class="col-md-3 col-sm-6">
+                  <div class="trip-card">
+                      <img src="img/image6.png" alt="Trip Image">
+                      <div class="trip-overlay">
+                          <p class="trip-price">Best Seller • $170/Person</p>
+                          <p class="trip-title">Langtang Valley and Tamang Heritage Trek</p>
+                          <p class="trip-duration">5 Days</p>
+                          <a href="#" class="btn btn-outline-light btn-sm">View Details</a>
+                      </div>
+                  </div>
+              </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- section-5  -->
+  <section class="section-5 ">
+    <div class="row">
+      <div class="col-4 ">
+        <div class="box opacity-75 p-5">
+          <div class="p-5 text-center">
+            <div class="row mb-2">
+              <h2 class="text-uppercase ">why to choose us?</h2>
+            </div>
+            <div class="row ">
+              <div class="col-2">
+                <svg width="35" height="36" viewBox="0 0 35 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M31.9751 13.9904C31.6358 14.0494 31.3329 14.2459 31.1332 14.5368C30.9334 14.8276 30.853 15.189 30.9098 15.5414C31.0414 16.3583 31.1075 17.1852 31.1076 18.0135C31.1107 21.6411 29.8268 25.1428 27.5013 27.8496C26.0545 25.6724 24.0201 23.9879 21.654 23.0082C22.925 21.9686 23.8525 20.5435 24.3074 18.9311C24.7623 17.3187 24.7221 15.5991 24.1924 14.0116C23.6627 12.424 22.6697 11.0473 21.3517 10.073C20.0336 9.09861 18.4559 8.57503 16.8381 8.57503C15.2202 8.57503 13.6425 9.09861 12.3245 10.073C11.0064 11.0473 10.0135 12.424 9.48372 14.0116C8.95399 15.5991 8.91379 17.3187 9.36873 18.9311C9.82366 20.5435 10.7511 21.9686 12.0221 23.0082C9.65598 23.9879 7.62162 25.6724 6.17483 27.8496C4.35015 25.7143 3.15824 23.077 2.74243 20.2549C2.32662 17.4328 2.70462 14.5461 3.83096 11.9418C4.9573 9.33751 6.78404 7.12653 9.09153 5.57472C11.399 4.02291 14.089 3.19634 16.8381 3.1944C17.6356 3.19445 18.4318 3.26317 19.2185 3.39984C19.5563 3.45519 19.9014 3.36979 20.1789 3.16221C20.4564 2.95464 20.6437 2.64168 20.7001 2.29141C20.7565 1.94115 20.6775 1.58191 20.4802 1.29185C20.2829 1.00178 19.9833 0.804357 19.6466 0.742513C16.1237 0.127042 12.5036 0.6902 9.309 2.35068C6.11439 4.01115 3.51059 6.68302 1.87352 9.98052C0.236446 13.278 -0.349174 17.0305 0.201212 20.6962C0.751597 24.3618 2.40951 27.751 4.93557 30.3744C7.46163 32.9977 10.7251 34.7195 14.2549 35.291C17.7846 35.8626 21.3979 35.2544 24.5731 33.5543C27.7483 31.8542 30.3211 29.1501 31.92 25.8325C33.5189 22.5149 34.0612 18.7554 33.4685 15.0968C33.4118 14.7444 33.2225 14.4299 32.9425 14.2224C32.6624 14.0149 32.3144 13.9315 31.9751 13.9904ZM11.6491 16.6663C11.6491 15.6005 11.9535 14.5586 12.5236 13.6725C13.0938 12.7863 13.9042 12.0956 14.8523 11.6877C15.8005 11.2799 16.8438 11.1731 17.8504 11.3811C18.8569 11.589 19.7815 12.1022 20.5072 12.8559C21.2329 13.6095 21.7271 14.5697 21.9273 15.615C22.1275 16.6603 22.0247 17.7438 21.632 18.7285C21.2393 19.7131 20.5742 20.5547 19.7209 21.1469C18.8676 21.739 17.8643 22.055 16.8381 22.055C15.4619 22.055 14.1421 21.4873 13.1689 20.4767C12.1958 19.4661 11.6491 18.0955 11.6491 16.6663ZM8.09473 29.7172C9.03317 28.193 10.326 26.9386 11.854 26.0698C13.382 25.2009 15.096 24.7455 16.8381 24.7455C18.5801 24.7455 20.2941 25.2009 21.8221 26.0698C23.3501 26.9386 24.643 28.193 25.5814 29.7172C23.0815 31.7362 20.005 32.8324 16.8381 32.8324C13.6712 32.8324 10.5946 31.7362 8.09473 29.7172ZM34.6198 4.14753L29.4309 9.53629C29.3104 9.66154 29.1674 9.76091 29.0099 9.82871C28.8524 9.8965 28.6836 9.9314 28.5131 9.9314C28.3427 9.9314 28.1738 9.8965 28.0164 9.82871C27.8589 9.76091 27.7158 9.66154 27.5953 9.53629L25.0009 6.84191C24.8804 6.71674 24.7847 6.56815 24.7195 6.40461C24.6543 6.24107 24.6207 6.06579 24.6207 5.88877C24.6207 5.71176 24.6543 5.53648 24.7195 5.37294C24.7847 5.2094 24.8804 5.06081 25.0009 4.93564C25.2443 4.68285 25.5744 4.54084 25.9187 4.54084C26.0891 4.54084 26.2579 4.5757 26.4154 4.64344C26.5728 4.71118 26.7159 4.81047 26.8365 4.93564L28.5131 6.67856L32.7843 2.24126C32.9048 2.11609 33.0479 2.0168 33.2053 1.94906C33.3628 1.88132 33.5316 1.84646 33.702 1.84646C33.8725 1.84646 34.0413 1.88132 34.1988 1.94906C34.3562 2.0168 34.4993 2.11609 34.6198 2.24126C34.7404 2.36643 34.836 2.51502 34.9012 2.67856C34.9664 2.8421 35 3.01738 35 3.1944C35 3.37141 34.9664 3.54669 34.9012 3.71023C34.836 3.87377 34.7404 4.02237 34.6198 4.14753Z"
+                    fill="#EE9B00" />
+                </svg>
+              </div>
+              <div class="col text-start">
+                <div class="row">
+                  <h6>25+ years of experience</h6>
+                </div>
+                <div class="row">
+                  <h6>Lorem ipsum dolor sit and the the the ametdft. Ducimus, est.</h6>
+                </div>
+              </div>
+            </div>
+            <!-- second item  -->
+            <div class="row pt-3 ">
+              <div class="col-2"><svg width="35" height="32" viewBox="0 0 35 32" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M6.80556 0.0644531C4.35944 0.186967 2.81556 0.537007 1.70917 1.53462C-1.15898e-07 3.07305 0 5.54784 0 10.4974V20.9986C0 25.95 -1.15898e-07 28.4247 1.70917 29.9632C3.41639 31.4998 6.16778 31.4998 11.6667 31.4998H23.3333C28.8322 31.4998 31.5836 31.4998 33.2908 29.9632C35 28.423 35 25.95 35 20.9986V10.4974C35 5.54784 35 3.07305 33.2908 1.53462C32.1844 0.537007 30.6406 0.186967 28.1944 0.0644531V0.874797C28.1944 2.26734 27.5799 3.60286 26.4859 4.58754C25.3919 5.57222 23.9082 6.12541 22.3611 6.12541H12.6389C11.0918 6.12541 9.60806 5.57222 8.5141 4.58754C7.42014 3.60286 6.80556 2.26734 6.80556 0.874797V0.0644531ZM24.3289 14.9604C24.4709 14.8432 24.5858 14.7019 24.6668 14.5445C24.7478 14.3871 24.7934 14.2169 24.8008 14.0436C24.8083 13.8703 24.7775 13.6973 24.7103 13.5348C24.6431 13.3722 24.5407 13.2233 24.4092 13.0966C24.2776 12.9698 24.1195 12.8678 23.9439 12.7964C23.7683 12.725 23.5787 12.6857 23.3861 12.6806C23.1935 12.6756 23.0016 12.7049 22.8217 12.767C22.6418 12.829 22.4773 12.9226 22.3378 13.0422L14.9994 19.2064L12.6622 17.2427C12.3789 17.009 12.0045 16.8854 11.6204 16.8988C11.2363 16.9122 10.8737 17.0615 10.6113 17.3143C10.3489 17.5671 10.208 17.9029 10.2192 18.2487C10.2304 18.5945 10.3928 18.9223 10.6711 19.1609L14.0058 21.9612C14.2758 22.1879 14.6313 22.3139 15.0004 22.3139C15.3696 22.3139 15.725 22.1879 15.995 21.9612L24.3289 14.9604Z"
+                    fill="#EE9B00" />
+                </svg>
+              </div>
+
+              <div class="col text-start">
+                <div class="row">
+                  <h6>25+ years of experience</h6>
+                </div>
+                <div class="row">
+                  <h6>Lorem ipsum dolor sit and the the the ametdft. Ducimus, est.</h6>
+                </div>
+              </div>
+            </div>
+            <!-- third -->
+            <div class="row pt-3 ">
+              <div class="col-2">
+                <svg width="37" height="38" viewBox="0 0 37 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.77778 31.25H28.2222M32.1111 26C33.6219 26.0403 34.5222 26.1925 35.1444 26.7543C36 27.5243 36 28.7633 36 31.243C36 33.721 36 34.9601 35.1444 35.7301C34.2908 36.5001 32.9161 36.5001 30.1667 36.5001H6.83333C4.08389 36.5001 2.70917 36.5001 1.85556 35.7301C1.00194 34.9601 1 33.721 1 31.243C1 28.765 1 27.5243 1.85556 26.7543C2.47778 26.1943 3.37806 26.0403 4.88889 26"
+                    stroke="#EE9B00" stroke-width="1.28562" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M23.0013 31.25C23.723 30.6938 24.3025 30.0037 24.7002 29.2272C25.0979 28.4506 25.3044 27.6058 25.3055 26.7507C25.3055 23.4362 22.2585 20.7499 18.4999 20.7499C14.7413 20.7499 11.6944 23.4362 11.6944 26.7507C11.6955 27.6058 11.9019 28.4506 12.2996 29.2272C12.6974 30.0037 13.2769 30.6938 13.9985 31.25M34.0555 15.4999H29.3985C28.8269 15.4999 28.263 15.3844 27.7516 15.1604L23.781 13.4314C23.2667 13.2085 22.703 13.093 22.1322 13.0936H20.106C18.146 13.0936 16.5555 11.7093 16.5555 10.0013C16.5555 9.93134 16.608 9.87184 16.6838 9.85258L21.6247 8.62408C22.511 8.40311 23.4563 8.47961 24.2847 8.83933L28.5294 10.6873M16.5555 11.1248L7.62466 13.5941C6.84716 13.8088 6.01417 13.797 5.24457 13.5604C4.47497 13.3237 3.80809 12.8743 3.3391 12.2764C2.6216 11.3838 2.91327 10.1028 3.95938 9.56033L18.5719 1.97054C19.0288 1.73261 19.5348 1.58089 20.0589 1.52463C20.5831 1.46837 21.1145 1.50874 21.6208 1.64329L34.0555 4.96481"
+                    stroke="#EE9B00" stroke-width="1.28562" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+              </div>
+
+              <div class="col text-start">
+                <div class="row">
+                  <h6>25+ years of experience</h6>
+                </div>
+                <div class="row">
+                  <h6>Lorem ipsum dolor sit and the the the ametdft. Ducimus, est.</h6>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-8">
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- section6 -->
+  <section class="section-6 pt-5 pb-3">
+    <div class="container">
+      <div class="row pt-5 pb-5">
+        <div class="col-3">
+          <div class="row pb-2">
+            <h2 class="title-main">Wanderlust.</h2>
+          </div>
+          <div class="row pb-2 ">
+            <h6 class="text-uppercase ">subscribe to our news letter</h6>
+          </div>
+
+          <div class="row ">
+            <div class="input-group flex-nowrap">
+              <input type="text" class="form-control" placeholder="Youremail@gmail.com" aria-label="email"
+                aria-describedby="addon-wrapping">
+              <span class="input-group-text" id="addon-wrapping">@</span>
+            </div>
+
+          </div>
+        </div>
+        <div class="col"></div>
+        <div class="col-8 ">
+          <div class="row">
+            <div class="col-2">
+              <div class="row">
+                <h6>SERVICES</h6>
+              </div>
+              <div class="row ">
+                <ul class="footer-list">
+                  <li><a href="">Trekking</a></li>
+                  <li><a href="">Rock Climbing</a></li>
+                  <li><a href="">Camping</a></li>
+                  <li><a href="">Fishing</a></li>
+                  <li><a href="">Trekking</a></li>
+                  <li><a href="">Rock Climbing</a></li>
+                  <li><a href="">Camping</a></li>
+                  <li><a href="">Fishing</a></li>
+
+                </ul>
+
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="row">
+                <h6>ABOUT</h6>
+              </div>
+              <div class="row ">
+                <ul class="footer-list">
+                  <li><a href="">Adventure Blog</a></li>
+                  <li><a href="">Our Team</a></li>
+                  <li><a href="">Gallery</a></li>
+
+
+                </ul>
+
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="row">
+                <h6>CONTACT INFO</h6>
+              </div>
+              <div class="row ">
+                <ul class="footer-list">
+                  <li><a href="">wanderlust@trek.com</a></li>
+                  <li><a href="">+977 9815632202</a></li>
+                  <li><a href="">
+                      <h6>Send Us A Message</h6>
+                    </a></li>
+
+
+                </ul>
+
+              </div>
+            </div>
+            <div class="col">
+              <div class="row">
+                <h6>FOLLOW US</h6>
+              </div>
+              <div class="row ">
+                <div class="col ">
+                  <svg class="me-2" width="36" height="35" viewBox="0 0 36 35" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10.7784 0H25.4784C31.0784 0 35.6284 4.55 35.6284 10.15V24.85C35.6284 27.5419 34.559 30.1236 32.6556 32.0271C30.7521 33.9306 28.1704 35 25.4784 35H10.7784C5.17842 35 0.628418 30.45 0.628418 24.85V10.15C0.628418 7.45805 1.69779 4.87636 3.60128 2.97287C5.50478 1.06937 8.08647 0 10.7784 0ZM10.4284 3.5C8.75755 3.5 7.15512 4.16375 5.97365 5.34523C4.79217 6.52671 4.12842 8.12914 4.12842 9.8V25.2C4.12842 28.6825 6.94592 31.5 10.4284 31.5H25.8284C27.4993 31.5 29.1017 30.8363 30.2832 29.6548C31.4647 28.4733 32.1284 26.8709 32.1284 25.2V9.8C32.1284 6.3175 29.3109 3.5 25.8284 3.5H10.4284ZM27.3159 6.125C27.8961 6.125 28.4525 6.35547 28.8627 6.7657C29.273 7.17594 29.5034 7.73234 29.5034 8.3125C29.5034 8.89266 29.273 9.44906 28.8627 9.8593C28.4525 10.2695 27.8961 10.5 27.3159 10.5C26.7358 10.5 26.1794 10.2695 25.7691 9.8593C25.3589 9.44906 25.1284 8.89266 25.1284 8.3125C25.1284 7.73234 25.3589 7.17594 25.7691 6.7657C26.1794 6.35547 26.7358 6.125 27.3159 6.125ZM18.1284 8.75C20.4491 8.75 22.6747 9.67187 24.3156 11.3128C25.9565 12.9538 26.8784 15.1794 26.8784 17.5C26.8784 19.8206 25.9565 22.0462 24.3156 23.6872C22.6747 25.3281 20.4491 26.25 18.1284 26.25C15.8078 26.25 13.5822 25.3281 11.9412 23.6872C10.3003 22.0462 9.37842 19.8206 9.37842 17.5C9.37842 15.1794 10.3003 12.9538 11.9412 11.3128C13.5822 9.67187 15.8078 8.75 18.1284 8.75ZM18.1284 12.25C16.736 12.25 15.4007 12.8031 14.4161 13.7877C13.4315 14.7723 12.8784 16.1076 12.8784 17.5C12.8784 18.8924 13.4315 20.2277 14.4161 21.2123C15.4007 22.1969 16.736 22.75 18.1284 22.75C19.5208 22.75 20.8562 22.1969 21.8407 21.2123C22.8253 20.2277 23.3784 18.8924 23.3784 17.5C23.3784 16.1076 22.8253 14.7723 21.8407 13.7877C20.8562 12.8031 19.5208 12.25 18.1284 12.25Z"
+                      fill="white" />
+                  </svg>
+
+                  <svg class="me-2" width="36" height="35" viewBox="0 0 36 35" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M35.6284 17.5439C35.6284 7.85965 27.7884 0 18.1284 0C8.46842 0 0.628418 7.85965 0.628418 17.5439C0.628418 26.0351 6.64842 33.1053 14.6284 34.7368V22.807H11.1284V17.5439H14.6284V13.1579C14.6284 9.77193 17.3759 7.01754 20.7534 7.01754H25.1284V12.2807H21.6284C20.6659 12.2807 19.8784 13.0702 19.8784 14.0351V17.5439H25.1284V22.807H19.8784V35C28.7159 34.1228 35.6284 26.6491 35.6284 17.5439Z"
+                      fill="white" />
+                  </svg>
+
+                  <svg class="me-2" width="36" height="25" viewBox="0 0 36 25" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M18.2411 0H18.4358C20.234 0.00667319 29.3455 0.0734055 31.8022 0.745173C32.5449 0.950193 33.2217 1.34981 33.7649 1.9041C34.3081 2.45839 34.6987 3.14793 34.8978 3.90382C35.1187 4.74909 35.274 5.86796 35.379 7.02242L35.4009 7.25376L35.449 7.8321L35.4665 8.06344C35.6087 10.0965 35.6262 12.0006 35.6284 12.4166V12.5834C35.6262 13.0149 35.6065 15.048 35.449 17.1657L35.4315 17.3992L35.4118 17.6306C35.3025 18.9029 35.1406 20.1664 34.8978 21.0962C34.6987 21.8521 34.3081 22.5416 33.7649 23.0959C33.2217 23.6502 32.5449 24.0498 31.8022 24.2548C29.2646 24.9488 19.6193 24.9978 18.2826 25H17.972C17.296 25 14.5002 24.9867 11.5688 24.8843L11.1969 24.871L11.0066 24.8621L10.6325 24.8465L10.2584 24.8309C7.83012 24.722 5.51779 24.5462 4.45241 24.2526C3.70998 24.0478 3.0334 23.6485 2.49021 23.0946C1.94702 22.5407 1.55625 21.8517 1.3569 21.0962C1.11407 20.1686 0.952188 18.9029 0.842806 17.6306L0.825305 17.397L0.807804 17.1657C0.699217 15.6585 0.63939 14.148 0.628418 12.6368L0.628418 12.3632C0.632793 11.885 0.650294 10.2322 0.768427 8.40822L0.78374 8.17911L0.790303 8.06344L0.807804 7.8321L0.855932 7.25376L0.877809 7.02242C0.982815 5.86796 1.13814 4.74686 1.35909 3.90382C1.5581 3.14793 1.94873 2.45839 2.49194 1.9041C3.03514 1.34981 3.71191 0.950193 4.45459 0.745173C5.51997 0.456002 7.83231 0.278049 10.2606 0.16683L10.6325 0.151259L11.0088 0.137913L11.1969 0.13124L11.571 0.115669C13.653 0.0476101 15.7358 0.00979126 17.8189 0.0022245L18.2411 0ZM14.6293 7.14032V17.8575L23.7233 12.5011L14.6293 7.14032Z"
+                      fill="white" />
+                  </svg>
+
+                  <svg class="me-2" width="36" height="35" viewBox="0 0 36 35" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M31.7395 0C32.7709 0 33.7601 0.409721 34.4894 1.13903C35.2187 1.86834 35.6284 2.85749 35.6284 3.88889V31.1111C35.6284 32.1425 35.2187 33.1317 34.4894 33.861C33.7601 34.5903 32.7709 35 31.7395 35H4.51731C3.48591 35 2.49676 34.5903 1.76745 33.861C1.03814 33.1317 0.628418 32.1425 0.628418 31.1111V3.88889C0.628418 2.85749 1.03814 1.86834 1.76745 1.13903C2.49676 0.409721 3.48591 0 4.51731 0H31.7395ZM30.7673 30.1389V19.8333C30.7673 18.1522 30.0995 16.5398 28.9107 15.3511C27.7219 14.1623 26.1096 13.4944 24.4284 13.4944C22.7756 13.4944 20.8506 14.5056 19.9173 16.0222V13.8639H14.4923V30.1389H19.9173V20.5528C19.9173 19.0556 21.1229 17.8306 22.6201 17.8306C23.3421 17.8306 24.0345 18.1174 24.545 18.6279C25.0555 19.1384 25.3423 19.8308 25.3423 20.5528V30.1389H30.7673ZM8.17286 10.8111C9.03924 10.8111 9.87013 10.4669 10.4827 9.85433C11.0954 9.24171 11.4395 8.41082 11.4395 7.54444C11.4395 5.73611 9.9812 4.25833 8.17286 4.25833C7.30133 4.25833 6.4655 4.60455 5.84923 5.22081C5.23297 5.83708 4.88675 6.67291 4.88675 7.54444C4.88675 9.35278 6.36453 10.8111 8.17286 10.8111ZM10.8756 30.1389V13.8639H5.48953V30.1389H10.8756Z"
+                      fill="white" />
+                  </svg>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair:ital,wght@1,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&display=swap"
+  rel="stylesheet" />
+
+</html>

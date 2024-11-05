@@ -1,0 +1,169 @@
+/* Import Google font - Poppins */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.section-4{
+  display: flex;
+  padding: 0 35px;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: url(img/image4.png);
+  background-size: cover;
+}
+
+
+.wrapper{
+  display: flex;
+  max-width: 1200px;
+  position: relative;
+}
+
+.wrapper .carousel{
+  font-size: 0px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+.carousel.dragging{
+  cursor: grab;
+  scroll-behavior: auto;
+}
+.carousel.dragging img{
+  pointer-events: none;
+}
+.carousel img{
+  height: 400px;
+  object-fit: cover;
+  user-select: none;
+  margin-left: 50px;
+  width: calc(100% / 2);
+  border-radius: 10px;
+}
+.carousel img:first-child{
+  margin-left: 250px;
+}
+
+@media screen and (max-width: 900px) {
+  .carousel img{
+    width: calc(100% / 2);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .carousel img{
+    width: 100%;
+  }
+}
+
+.btn {
+  border-radius: 50px;
+  color: white;
+  font-weight: bold;
+  width: max-content;
+}
+
+
+.section-landing .carousel img{
+  height: 200px;
+  object-fit: cover;
+  user-select: none;
+  margin-left: 10px;
+  width: calc(100% / 7);
+  border-radius: 10px;
+}
+
+.section-landing .carousel img:first-child{
+  margin-left: 40vw;
+}
+
+
+/* wrapper2 */
+
+.wrapper2{
+  display: flex;
+  max-width: 1200px;
+  position: relative;
+}
+
+.wrapper2 .carousel2{
+  font-size: 0px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+
+.carousel2.dragging{
+  cursor: grab;
+  scroll-behavior: auto;
+}
+.carousel2.dragging img{
+  pointer-events: none;
+}
+.carousel2 img{
+  height: 400px;
+  object-fit: cover;
+  user-select: none;
+  margin-left: 50px;
+  width: calc(100% / 2);
+  border-radius: 10px;
+}
+.carousel2 img:first-child{
+  margin-left: 250px;
+}
+
+@media screen and (max-width: 900px) {
+  .carousel2 img{
+    width: calc(100% / 2);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .carousel2 img{
+    width: 100%;
+  }
+}
+
+
+/* 02 trending trip  */
+.trending-trip {
+  background-color: #333;
+  color: white;
+  padding: 40px 20px;
+}
+.trip-card {
+  position: relative;
+  color: white;
+  overflow: hidden;
+  border-radius: 0;
+}
+.trip-card img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s;
+}
+.trip-card:hover img {
+  transform: scale(1.1);
+}
+.trip-overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  width: 100%;
+  padding: 10px;
+}
+.trip-overlay .trip-title {
+  font-weight: bold;
+}
+.trip-overlay .trip-price, .trip-overlay .trip-duration {
+  font-size: 0.9rem;
+}
+.col-md-3, .col-sm-6 {
+  padding: 0;
+}
