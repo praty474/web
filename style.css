@@ -1,42 +1,263 @@
-/* Import Google font - Poppins */
-*{
+* {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
-.section-4{
+
+/* landing page  */
+.section-landing {
+  position: relative;
+  height: 100vh;
+  background: url(img/image.png);
+  color: white;
   display: flex;
-  padding: 0 35px;
-  min-height: 100vh;
   align-items: center;
   justify-content: center;
+  background-size: cover;
+  opacity: 90%;
+}
+
+.section-landing a {
+  color: white;
+}
+
+.title-landing {
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 90%;
+}
+
+section {
+  position: relative;
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* section-1  */
+.section-1 {
+  background: #1e1e1e;
+}
+
+/* section-2  */
+.section-2 {
+  background: url(img/image.png);
+  background-size: cover;
+}
+
+/* section-3  */
+.section-3 {
+  background: #1e1e1e;
+}
+/* section-4  */
+.section-img {
+  height: auto;
+  background: #1e1e1e;
+  padding: calc(5%);
+}
+/* section-5  */
+.section-5 {
+  background: url(img/image7.png);
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* section-6  */
+.section-6 {
+  height: max-content;
+  background: #1e1e1e;
+}
+/* num  */
+.num {
+  font-size: 9rem;
+  font-weight: bold;
+  color: #ee9b00;
+}
+
+.num-2 {
+  font-size: 6rem;
+  font-weight: bold;
+  color: #ee9b00;
+}
+
+/* title  */
+.title-main {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.title {
+  font-size: 2.6rem;
+  font-weight: 200;
+}
+
+.title-sec2 {
+  font-size: 2.6rem;
+  font-weight: 600;
+}
+
+/* box  */
+.box {
+  height: 100vh;
+  width: 42vw;
+  background: #1e1e1e;
+}
+
+.icons {
+  height: 24px;
+}
+
+.variable {
+  color: white;
+}
+
+.values {
+  color: #ee9b00;
+}
+
+.form-control,
+.input-group-text {
+  background-color: gray;
+  border: none;
+  font: 300;
+  color: white;
+}
+
+.section-6 input {
+  background-color: white;
+  font-size: 0.7rem;
+}
+
+.section-6 input::placeholder {
+  color: #ee9b00;
+}
+
+.section-6 .input-group-text {
+  background-color: #ee9b00;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 60%;
+  left: 20%;
+  /* transform: translate(-50%); */
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Transparent background for text */
+  padding: 20px;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .overlay-text {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+.carousel-item {
+  text-align: center;
+  color: white;
+}
+
+.carousel-item img {
+  width: 50%;
+  height: 300px;
+  filter: brightness(50%);
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+}
+
+.carousel-caption h5 {
+  font-size: 1.5rem;
+}
+
+.carousel-caption p {
+  font-size: 1rem;
+}
+
+.carousel-indicators li {
+  background-color: white;
+}
+
+.second img {
+  height: 200px;
+  width: calc(15%);
+}
+
+/* .p-lg-5{
+  padding: $spacer !important;
+} */
+
+/* footer */
+.section-6 ul {
+  list-style: none;
+}
+
+.section-6 .footer-list {
+  font-size: 0.8rem;
+}
+
+.section-6 a {
+  color: white;
+  text-decoration: none;
+}
+
+/* nav bar  */
+.section-landing {
+  padding-top: 60px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: none;
+}
+
+/* section-4  */
+.section-4 {
+  padding: 0 35px;
   background: url(img/image4.png);
   background-size: cover;
 }
 
-
-.wrapper{
+.wrapper {
   display: flex;
   max-width: 1200px;
   position: relative;
 }
-
-.wrapper .carousel{
+.wrapper .carousel {
   font-size: 0px;
   cursor: pointer;
   overflow: hidden;
   white-space: nowrap;
   scroll-behavior: smooth;
 }
-.carousel.dragging{
+.carousel.dragging {
   cursor: grab;
   scroll-behavior: auto;
 }
-.carousel.dragging img{
+.carousel.dragging img {
   pointer-events: none;
 }
-.carousel img{
+.carousel img {
   height: 400px;
   object-fit: cover;
   user-select: none;
@@ -44,22 +265,23 @@
   width: calc(100% / 2);
   border-radius: 10px;
 }
-.carousel img:first-child{
+.carousel img:first-child {
   margin-left: 250px;
 }
 
 @media screen and (max-width: 900px) {
-  .carousel img{
+  .carousel img {
     width: calc(100% / 2);
   }
 }
 
 @media screen and (max-width: 550px) {
-  .carousel img{
+  .carousel img {
     width: 100%;
   }
 }
 
+/* button */
 .btn {
   border-radius: 50px;
   color: white;
@@ -67,8 +289,7 @@
   width: max-content;
 }
 
-
-.section-landing .carousel img{
+.section-landing .carousel img {
   height: 200px;
   object-fit: cover;
   user-select: none;
@@ -77,20 +298,19 @@
   border-radius: 10px;
 }
 
-.section-landing .carousel img:first-child{
+.section-landing .carousel img:first-child {
   margin-left: 40vw;
 }
 
-
 /* wrapper2 */
 
-.wrapper2{
+.wrapper2 {
   display: flex;
   max-width: 1200px;
   position: relative;
 }
 
-.wrapper2 .carousel2{
+.wrapper2 .carousel2 {
   font-size: 0px;
   cursor: pointer;
   overflow: hidden;
@@ -98,14 +318,14 @@
   scroll-behavior: smooth;
 }
 
-.carousel2.dragging{
+.carousel2.dragging {
   cursor: grab;
   scroll-behavior: auto;
 }
-.carousel2.dragging img{
+.carousel2.dragging img {
   pointer-events: none;
 }
-.carousel2 img{
+.carousel2 img {
   height: 400px;
   object-fit: cover;
   user-select: none;
@@ -113,22 +333,21 @@
   width: calc(100% / 2);
   border-radius: 10px;
 }
-.carousel2 img:first-child{
+.carousel2 img:first-child {
   margin-left: 250px;
 }
 
 @media screen and (max-width: 900px) {
-  .carousel2 img{
+  .carousel2 img {
     width: calc(100% / 2);
   }
 }
 
 @media screen and (max-width: 550px) {
-  .carousel2 img{
+  .carousel2 img {
     width: 100%;
   }
 }
-
 
 /* 02 trending trip  */
 .trending-trip {
@@ -161,9 +380,11 @@
 .trip-overlay .trip-title {
   font-weight: bold;
 }
-.trip-overlay .trip-price, .trip-overlay .trip-duration {
+.trip-overlay .trip-price,
+.trip-overlay .trip-duration {
   font-size: 0.9rem;
 }
-.col-md-3, .col-sm-6 {
+.col-md-3,
+.col-sm-6 {
   padding: 0;
 }
